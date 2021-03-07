@@ -19,7 +19,7 @@ const createIntentImage = (text) => {
 	// See https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/web-intent
 	const intent = `https://twitter.com/intent/tweet?text=${text}`;
 
-	const image = `/img/gif/${images[Math.floor(Math.random() * images.length)]}`;
+	const image = `img/gif/${images[Math.floor(Math.random() * images.length)]}`;
 	const size = 60;
 
 	return createTableData(`<a href="${intent}" target="_blank" rel="noopener noreferrer"><img src="${image}" alt="${text}" width="${size}", height="${size}"></a>`);
