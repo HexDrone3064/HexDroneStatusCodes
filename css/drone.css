@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'hexgon';
-	src: url('/font/hexgon.woff2') format('woff2');
+	src: url('../font/hexgon.woff2') format('woff2');
 }
 
 .hexgon * {
