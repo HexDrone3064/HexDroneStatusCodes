@@ -15,7 +15,7 @@ const spnStatus = document.getElementById('spn_status');
 if (storage.getItem(key) != null) {
 	droneId = storage.getItem(key);
 	iptDroneId.value = droneId;
-	spnStatus.innerText = '⬡-Drone ID loaded.';
+	spnStatus.innerText = '⬡-Drone ID is loaded.';
 } else {
 	spnStatus.innerText = '⬡-Drone ID is required.';
 }
@@ -24,7 +24,7 @@ if (storage.getItem(key) != null) {
 btSave.addEventListener('click', (ev) => {
 	droneId = iptDroneId.value;
 	storage.setItem(key, droneId);
-	spnStatus.innerText = '⬡-Drone ID saved.';
+	spnStatus.innerText = '⬡-Drone ID is saved.';
 	buildTable(tbCode, droneId);
 });
 
