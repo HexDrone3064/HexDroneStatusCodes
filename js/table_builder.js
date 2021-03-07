@@ -40,8 +40,8 @@ const createTableRow = (droneId, obj) => {
 	return [
 		'<tr>', 
 		createIntentImage(buildMessage(droneId, obj)),
-		createTableData(lang['code'] ?? 'Err'), 
-		createTableData(lang['message'] ?? ''),
+		createTableData(lang['code'] ? lang['code'] : 'Err'), 
+		createTableData(lang['message'] ? lang['message'] : ''),
 		createTableData(additionalMessage), 
 		'</tr>'
 	].join('');
