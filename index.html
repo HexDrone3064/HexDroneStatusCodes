@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>⬡-DRONE STATUS CODES</title>
+    <link rel="stylesheet" href="/css/drone.css">
+    <link rel="shortcut icon" href="/img/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 class="hexgon center">
+      <a href="https://www.hexcorp.net/drone-status-codes">
+        HEX DRONE STATUS CODES
+      </a>
+    </h1>
+
+    <!-- Form for ⬡-Drone ID. -->
+    <form class="center">
+      <input id="ipt_drone_id" type="text" placeholder="⬡-Drone ID" class="center">
+      <input id="bt_save" type="button" value="SAVE"><br>
+      Status: <span id="spn_status"></span>
+    </form>
+
+    <!-- Table for show status codes. -->
+    <table class="center">
+      <thead>
+        <tr>
+          <th>Intent</th>
+          <th>Status code</th>
+          <th>Status message</th>
+          <th>Additional message</th>
+        </tr>
+      </thead>
+      <!-- Rows are created by javascript. -->
+      <tbody id="tb_code"></tbody>
+    </table>
+
+    <!-- Load scripts. -->
+    <script src="js/codes.js"></script>
+    <script src="js/table_builder.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="js/meme.js"></script>
+  </body>
+</html>
